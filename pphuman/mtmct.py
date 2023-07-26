@@ -505,6 +505,7 @@ def res2dict(multi_res, captures, frameId):
                 # print(res)
                 cid_tid_dict[key]["mean_feat"] = distill_idfeat(res)
             if cid == 0:
+                # 若该目标并非第一次出现(防止一些乱七八糟的被误判为目标)
                 crame0[key] = cid_tid_dict[key]["mean_feat"]
                 if frameId > 4:
                     if key in list(captures[frameId - 3]["crame0"].keys()):

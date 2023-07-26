@@ -200,6 +200,7 @@ class Pipeline(object):
             #     thread.join()
             frame_id = 0
             multi_res = []
+            # crame0all中放所有检测出的目标,以供另一个镜头对比;crame1all中同理
             mapTids = {"crame0all": dict(), "crame1all": dict(), "lostfindID": dict()}
             # mapTids = dict()
             while True:
