@@ -1,5 +1,5 @@
 crop_thresh: 0.5
-attr_thresh: 0.5
+attr_thresh: 0.8
 kpt_thresh: 0.2
 visual: True
 warmup_frame: 50

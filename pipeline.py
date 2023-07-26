@@ -200,7 +200,8 @@ class Pipeline(object):
             #     thread.join()
             frame_id = 0
             multi_res = []
-            mapTids = dict()
+            mapTids = {"crame0all": dict(), "crame1all": dict(), "lostfindID": dict()}
+            # mapTids = dict()
             while True:
                 frame_res = []
                 # print(len(threadQueues))
